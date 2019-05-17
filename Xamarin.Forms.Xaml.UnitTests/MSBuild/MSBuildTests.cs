@@ -199,7 +199,7 @@ namespace Xamarin.Forms.MSBuild.UnitTests
 		{
 			var psi = new ProcessStartInfo {
 				FileName = FindMSBuild (),
-				Arguments = $"/v:minimal /nologo {projectFile} /t:{target} /bl {additionalArgs}",
+				Arguments = $"/v:normal /nologo {projectFile} /t:{target} /bl {additionalArgs}",
 				CreateNoWindow = true,
 				WindowStyle = ProcessWindowStyle.Hidden,
 				UseShellExecute = false,
